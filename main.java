@@ -1,8 +1,12 @@
 public class main {
     
-    public String draft(){
+    public static String draft(){
         String s = "Hello World";
         return s;
     }
-    
+    public static void main(String[] args){
+        System.out.println(draft());
 }
+}
+    
+
