@@ -30,23 +30,12 @@ video_id = fetchCode(url)
 youtubeAPI = YouTubeTranscriptApi()
 #This returns a FetchedTranscript object, refer to link to see what it would look like 
 fetched_transcript = youtubeAPI.fetch(video_id)
-#This shows all the text as little snippets, run to see what it looks like
-for snippet in fetched_transcript:
-    print(snippet)
+
 
 
 def combinedTranscript(fetched_transcript):#This function combines all the text snippets in one string
     combined_text = "";#This string will hold all the combined text
-    for snippet in fetched_transcript:#Loop through each snippet in the fetched transcript
-        snip = snippet['text'].split();#Splits the text of each snippet into individual words. Splits at spaces
-        #'text' holds the text of each snippet in the dictionary. We must specify that access to the text value otherwise it will split the entire dictionary including timing metadata
-        for word in snip:#iterates through each word in the snippet
-            combined_text += word + " "#Add the word followed by a space for each snippet to the empty string
-
-    combined_text = combined_text.strip()#Removes spaces at the beginning and end of string
-    return combined_text#return the combined text in one string
-
-print(combinedTranscript(fetched_transcript))#prints the transcript in one string
+    
 
 
 
