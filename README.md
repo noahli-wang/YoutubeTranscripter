@@ -1,2 +1,2 @@
 # YoutubeTranscripter
-turns Youtube videos into a transcript, hopefully not using ChatGPT API keys
+turns Youtube videos into a transcript, hopefully not using ChatGPT API keys, possibly the YouTube to Transcript API
